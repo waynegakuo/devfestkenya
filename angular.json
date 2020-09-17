@@ -121,8 +121,16 @@
               "devServerTarget": "devfestkenya:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "devfestkenya"
+    }
+  },
+  "defaultProject": "devfestkenya",
+  "cli": {
+    "analytics": false
+  }
 }

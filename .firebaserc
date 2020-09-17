@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "devfestkenya": {
+      "hosting": {
+        "devfestkenya": [
+          "devfestkenya"
+        ]
+      }
+    }
+  }
+}
