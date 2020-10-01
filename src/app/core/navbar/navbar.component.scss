@@ -1,0 +1,123 @@
+@import "../../../color";
+@import "../../../shadows";
+
+.nav-bar {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    overflow: hidden;
+
+    img {
+        width: 50px;
+        margin: $centre-margin;
+        cursor: pointer;
+    }
+
+    p {
+        color: $primary;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .burger {
+        border: 0;
+        background-color: transparent;
+        color: #0594ec;
+        font-size: 20px;
+        display: none;
+    }
+
+    .burger:focus {
+        outline: none;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: $centre-margin;
+        padding: 0;
+
+        li {
+            margin: 0 10px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: $primary;
+            font-weight: bold;
+            position: relative;
+        }
+        li a::after {
+            content: "";
+            background-color: $primary;
+            position: absolute;
+            left: 0;
+            bottom: -18px;
+            height: 2px;
+            width: 100%;
+            opacity: 0;
+            transition: transform 0.2s ease;
+        }
+
+        li .nav_link:hover::after {
+            transform: translateY(-15px);
+            opacity: 1;
+        }
+        li > .button {
+            color: white;
+        }
+
+        .active ~ span {
+            display: flex;
+            width: 50px;
+            border-bottom: 1.5px solid $primary;
+            z-index: 1;
+        }
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .button.outline {
+        padding: 11px 20px !important;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: $primary;
+    }
+}
+
+/* responsiveness */
+@media (max-width: 480px) {
+    .burger {
+        display: block;
+    }
+    nav ul {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.4s ease;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin: 15px;
+    }
+}
