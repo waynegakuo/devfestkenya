@@ -1,0 +1,80 @@
+@import "../../../color";
+@import "../../../shadows";
+
+.container {
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 100px;
+
+        .logo {
+            width: 50%;
+            padding: 20px;
+
+            img {
+                width: 100%;
+            }
+
+            .timeline {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                .date {
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: space-between;
+
+                    > span {
+                        padding: 0 10px;
+                        font-size: 1.1em;
+                    }
+                }
+                .online {
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: space-between;
+
+                    > span {
+                        padding: 0 10px;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+
+            .register {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                a {
+                    // width: 30%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    padding: 11px 47px !important;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    background-color: $primary;
+                }
+            }
+        }
+        .preview {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+    }
+}
