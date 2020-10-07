@@ -12,6 +12,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SpeakersComponent } from './views/speakers/speakers/speakers.component';
 import { CommunitiesComponent } from './views/communities/communities/communities.component';
 import { ScheduleComponent } from './views/schedule/schedule/schedule.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ScheduleComponent } from './views/schedule/schedule/schedule.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatTabsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
