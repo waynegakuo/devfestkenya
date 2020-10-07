@@ -9,9 +9,11 @@
     <ul>
         <li><a [routerLink]="['']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
                 class="nav_link">Home</a><span class="isactive"></span></li>
+        <li><a [routerLink]="['schedule']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
+                class="nav_link" (click)="openSnackBar()">Schedule</a><span class="isactive"></span></li>
         <li><a [routerLink]="['speakers']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
                 class="nav_link" (click)="openSnackBar()">Speakers</a><span class="isactive"></span></li>
-        <li><a [routerLink]="['communites']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
+        <li><a [routerLink]="['communities']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
                 class="nav_link" (click)="openSnackBar()">Communities</a><span class="isactive"></span></li>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdLGP1EbbiQ3sS_FNPwOJnHh9Lae1kVGQ0i6oi0pr1KR5dW8w/viewform"
                 target="_blank" rel="noopener noreferrer" class="nav_link">Register</a><span class="isactive"></span>

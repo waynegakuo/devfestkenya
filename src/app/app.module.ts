@@ -9,13 +9,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './core/footer/footer.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SpeakersComponent } from './views/speakers/speakers/speakers.component';
+import { CommunitiesComponent } from './views/communities/communities/communities.component';
+import { ScheduleComponent } from './views/schedule/schedule/schedule.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LandingPageComponent,
-    FooterComponent
+    FooterComponent,
+    SpeakersComponent,
+    CommunitiesComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,

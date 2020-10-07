@@ -79,8 +79,7 @@
 
         .active ~ span {
             display: flex;
-            width: 50px;
-            border-bottom: 1.5px solid $primary;
+            border-bottom: 2px solid $primary;
             z-index: 1;
         }
     }
