@@ -27,6 +27,56 @@
                     }
                 }
             }
+
+            .nav-links {
+                ul {
+                    display: flex;
+                    list-style-type: none;
+                    padding: 0;
+                    font-size: 1.2em;
+                }
+
+                li {
+                    margin: 10px 10px 0 0;
+                }
+
+                li a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        .footer-body {
+            align-content: center;
+            justify-content: center;
+
+            h4 {
+                text-align: center;
+            }
+
+            .socials {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+        }
+    }
+    ul {
+        flex-direction: column;
+
+        li {
+            text-align: center;
+        }
+
+        li a {
+            text-align: center;
         }
     }
 }
