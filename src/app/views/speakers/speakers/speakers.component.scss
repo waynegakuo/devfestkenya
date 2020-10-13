@@ -1,0 +1,45 @@
+@import "../../../../color";
+@import "../../../../shadows";
+
+
+h2 {
+    margin-top: 20px;
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 2.2em;
+}
+
+.speakers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .card {
+        margin-right: 10px;
+    }
+
+    .speaker-name {
+        font-family: Poppins;
+        color: $primary;
+        font-weight: bolder;
+        font-size: 1.4em;
+    }
+
+    .speaker-bio {
+        font-weight: bolder;
+        text-align: justify;
+    }
+}
+
+img {
+    width: 190px;
+    height: 225px;
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

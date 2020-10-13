@@ -1,4 +1,51 @@
-h2{
-    font-family: Poppins;
-    font-weight: bolder;
+@import "../../../../color";
+@import "../../../../shadows";
+
+.schedule {
+    margin-top: 20px;
+
+    h2 {
+        font-family: Poppins;
+        font-weight: bolder;
+    }
+
+    mat-expansion-panel {
+        padding: 20px;
+        margin: 10px 10px 10px 10px;
+
+        mat-panel-title {
+            font-weight: bolder;
+            font-size: 1.5em;
+        }
+
+        mat-panel-description {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        p {
+            color: $primary;
+            font-weight: bolder;
+            font-size: 1.1em;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .schedule {
+        mat-expansion-panel {
+            mat-panel-title {
+                font-size: 1em;
+            }
+
+            mat-panel-description {
+                font-size: 1em;
+            }
+
+            p {
+                margin-top: 20px;
+                font-size: 1em;
+            }
+        }
+    }
 }

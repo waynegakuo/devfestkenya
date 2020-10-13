@@ -80,3 +80,34 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .container {
+        .content {
+            flex-direction: column;
+
+            .logo {
+                padding: 10px;
+                width: 100%;
+
+                .timeline {
+                    flex-direction: column;
+                    .date {
+                        > span {
+                            font-size: 1.2em;
+                        }
+                    }
+
+                    .online {
+                        > span {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+            .preview {
+                width: 100%;
+            }
+        }
+    }
+}
