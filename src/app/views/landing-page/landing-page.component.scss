@@ -57,8 +57,9 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                a {
+                .register-link {
                     // width: 30%;
+                    margin: 0 10px 0 0;
                     text-align: center;
                     text-decoration: none;
                     color: white;
@@ -68,6 +69,13 @@
                     border-radius: 5px;
                     background-color: $primary;
                     font-size: 1.5em;
+                }
+
+                .discord-link {
+                    .discord {
+                        // margin: 0 10px 0 0;
+                        width: 30%;
+                    }
                 }
             }
         }
@@ -81,7 +89,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .container {
         .content {
             flex-direction: column;
@@ -103,6 +111,56 @@
                         > span {
                             font-size: 1.2em;
                         }
+                    }
+                }
+                .register {
+                    flex-direction: column;
+
+                    .register-link {
+                        padding: 21px 57px !important;
+                        font-size: 2em;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .preview {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        .content {
+            flex-direction: column;
+            margin-top: 30px;
+
+            .logo {
+                padding: 10px;
+                width: 100%;
+
+                .timeline {
+                    flex-direction: column;
+                    .date {
+                        > span {
+                            font-size: 1.2em;
+                        }
+                    }
+
+                    .online {
+                        > span {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+                .register {
+                    flex-direction: column;
+
+                    .register-link {
+                        margin-top: 10px;
+                        padding: 11px 47px !important;
+                        font-size: 1.5em;
                     }
                 }
             }
