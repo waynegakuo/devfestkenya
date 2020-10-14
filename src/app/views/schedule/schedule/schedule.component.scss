@@ -1,6 +1,28 @@
 @import "../../../../color";
 @import "../../../../shadows";
 
+.links {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    float: right;
+}
+
+.duration {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+
+    > span {
+        font-weight: bold;
+        margin: 3px 0 0 5px;
+        color: $accent-grey;
+    }
+}
+
 .schedule {
     margin-top: 20px;
 
@@ -23,7 +45,9 @@
             font-size: 1.1em;
         }
 
-        p {
+        p,
+        .stream-link {
+            text-decoration: none;
             color: $primary;
             font-weight: bolder;
             font-size: 1.1em;
