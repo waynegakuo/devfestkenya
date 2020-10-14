@@ -1,6 +1,25 @@
 @import "../../../color";
 @import "../../../shadows";
 
+mat-icon {
+    cursor: pointer;
+    color: $primary;
+    font-size: 2em;
+}
+
+mat-menu {
+    > button:focus {
+        outline: none;
+    }
+}
+
+.register {
+    text-decoration: none;
+    color: $primary;
+    font-weight: bolder;
+    font-family: Poppins;
+}
+
 .nav-bar {
     padding: 0;
     margin: 0;
@@ -18,7 +37,8 @@
         cursor: pointer;
     }
 
-    p {
+    .home-link {
+        text-decoration: none;
         color: $primary;
         margin: 0;
         text-transform: uppercase;
@@ -29,10 +49,6 @@
     }
 
     .burger {
-        border: 0;
-        background-color: transparent;
-        color: #0594ec;
-        font-size: 20px;
         display: none;
     }
 
@@ -51,7 +67,8 @@
             margin: 0 10px;
         }
 
-        li a {
+        li a,
+        .register {
             text-decoration: none;
             color: $primary;
             font-weight: bold;
@@ -98,10 +115,22 @@
 
 /* responsiveness */
 @media (max-width: 480px) {
-    .burger {
-        display: block;
+    .nav-bar {
+        width: 100%;
+        flex-direction: row;
+
+        .burger {
+            display: block;
+        }
     }
+
     nav ul {
+        // float: right;
+        // transform: translateX(400%);
+
+        // mat-icon {
+        //     float: right;
+        // }
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
         background-color: #fff;
         flex-direction: column;

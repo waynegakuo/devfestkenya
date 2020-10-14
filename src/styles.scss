@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "https://fonts.googleapis.com/css?family=Poppins";
+@import 'color';
 
 * {
     font-family: "Poppins";
@@ -12,6 +13,16 @@
     padding: 0;
     margin: 0;
     width: 100%;
+}
+
+
+button.mat-menu-item {
+    font-family: Poppins;
+    color: $primary;
+    font-weight: bold;
+}
+button.mat-menu-item:focus {
+    outline: none;
 }
 
 html,

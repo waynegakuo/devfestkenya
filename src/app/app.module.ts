@@ -14,6 +14,7 @@ import { CommunitiesComponent } from './views/communities/communities/communitie
 import { ScheduleComponent } from './views/schedule/schedule/schedule.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatSnackBarModule,
     MatTabsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

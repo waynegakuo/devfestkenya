@@ -1,24 +1,37 @@
 <nav class="nav-bar">
         <!-- <img src="../../../assets/images/GCSP_Original.jpg" alt="GCSP Logo" [routerLink]="['']"
         [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"> -->
-        <p>GDG DevFest Kenya</p>
-        <button class="burger" id="burger">
-                Toggle
-        </button>
+        <a class="home-link" [routerLink]="['']" [routerLinkActiveOptions]="{ exact: true }"
+                routerLinkActive="active">GDG DevFest Kenya</a>
+
+        <mat-icon class="burger" [matMenuTriggerFor]="menu">menu</mat-icon>
 
         <ul>
-                <li><a [routerLink]="['']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
+                <!-- <li><a [routerLink]="['']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
                                 class="nav_link">Home</a><span class="isactive"></span></li>
                 <li><a [routerLink]="['schedule']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
                                 class="nav_link">Schedule</a><span class="isactive"></span></li>
                 <li><a [routerLink]="['speakers']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
                                 class="nav_link">Speakers</a><span class="isactive"></span></li>
-                <!-- <li><a [routerLink]="" (click)=" openSnackBar()" class="nav_link">Communities</a><span
+                <li><a [routerLink]="" (click)=" openSnackBar()" class="nav_link">Communities</a><span
                                 class="isactive"></span>
-                </li> -->
+                </li>
                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdLGP1EbbiQ3sS_FNPwOJnHh9Lae1kVGQ0i6oi0pr1KR5dW8w/viewform"
                                 target="_blank" rel="noopener noreferrer" class="nav_link">Register</a><span
                                 class="isactive"></span>
-                </li>
+                </li> -->
+
+                <mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
+                <mat-menu #menu="matMenu">
+                        <button mat-menu-item [routerLink]="['']" [routerLinkActiveOptions]="{ exact: true }"
+                                routerLinkActive="active">Home</button>
+                        <button mat-menu-item [routerLink]="['schedule']" [routerLinkActiveOptions]="{ exact: true }"
+                                routerLinkActive="active">Schedule</button>
+                        <button mat-menu-item [routerLink]="['speakers']" [routerLinkActiveOptions]="{ exact: true }"
+                                routerLinkActive="active">Speakers</button>
+                        <a mat-menu-item class="register"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdLGP1EbbiQ3sS_FNPwOJnHh9Lae1kVGQ0i6oi0pr1KR5dW8w/viewform"
+                                target="_blank" rel="noopener noreferrer">Register</a>
+                </mat-menu>
         </ul>
 </nav>
