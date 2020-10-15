@@ -46,12 +46,27 @@
                     position: relative;
                 }
             }
+
+            .attributes {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 10px;
+
+                > span {
+                    opacity: 0.5;
+
+                    > a {
+                        text-decoration: none;
+                    }
+                }
+            }
         }
     }
 }
 
 @media (max-width: 480px) {
-
     .container {
         .footer-body {
             align-content: center;
